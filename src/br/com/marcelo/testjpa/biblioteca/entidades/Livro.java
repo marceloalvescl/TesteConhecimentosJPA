@@ -21,6 +21,18 @@ public class Livro {
 	@OneToOne
 	private OutrasInformacoes outrasInformacoes;
 	
+	public Livro() {
+		
+	}
+	
+	public Livro(String nome, AreaConhecimento areaConhecimento, Autor autor, OutrasInformacoes outrasInformacoes) {
+		super();
+		this.nome = nome;
+		this.areaConhecimento = areaConhecimento;
+		this.autor = autor;
+		this.outrasInformacoes = outrasInformacoes;
+	}
+
 	public Integer getId() {
 		return id;
 	}

@@ -18,8 +18,7 @@ public class PopulaAutor {
 		EntityManager em = new JPAUtil().getEntityManager();
 
 		em.getTransaction().begin();
-		/**
-		 * 
+		
 		Autor autor1 = new Autor("Fernando Pessoa", "13/06/1888");
 		Autor autor2 = new Autor("Augusto Cury", "02/10/1958");
 		Autor autor3 = new Autor("Machado de Assis", "21/06/1839");
@@ -37,19 +36,22 @@ public class PopulaAutor {
 				e.printStackTrace();
 			}
 		}
+		/*
+		Autor a1 = em.find(Autor.class, 1);
+		a1.setDataNascimento("13/06/1888");
+		Autor a2 = em.find(Autor.class, 2);
+		a2.setDataNascimento("02/10/1958");
+		Autor a3 = em.find(Autor.class, 3);
+		a3.setDataNascimento("21/06/1839");
+		Autor a4 = em.find(Autor.class, 4);
+		a4.setDataNascimento("31/10/1902");
+		Autor a5 = em.find(Autor.class, 5);
+		a5.setDataNascimento("24/08/1947");
+		Autor a6 = em.find(Autor.class, 6);
+		a6.setDataNascimento("26/06/1955");
+		Autor a7 = em.find(Autor.class, 7);
+		a7.setDataNascimento("03/01/1892");
 		*/
-		
-		Autor a = em.find(Autor.class, 3);
-		a.setDataNascimento("21/06/1839");
-		Autor a1 = em.find(Autor.class, 4);
-		a1.setDataNascimento("31/10/1902");
-		Autor a2 = em.find(Autor.class, 5);
-		a2.setDataNascimento("24/08/1947");
-		Autor a3 = em.find(Autor.class, 6);
-		a3.setDataNascimento("26/06/1955");
-		Autor a4 = em.find(Autor.class, 7);
-		a4.setDataNascimento("03/01/1892");
-		
 		
 		
 		em.getTransaction().commit();

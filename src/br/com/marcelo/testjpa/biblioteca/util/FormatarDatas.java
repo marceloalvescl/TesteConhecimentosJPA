@@ -12,6 +12,9 @@ public class FormatarDatas {
 		Integer mes = Integer.parseInt(data.substring(3,5));
 		Integer ano = Integer.parseInt(data.substring(6));
 		
+		//mes 0 = Janeiro
+		mes--;
+		
 		Calendar c = Calendar.getInstance();
 		c.set(ano, mes, dia);
 		

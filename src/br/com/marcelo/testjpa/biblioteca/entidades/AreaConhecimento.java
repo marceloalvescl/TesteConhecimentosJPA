@@ -17,6 +17,10 @@ public class AreaConhecimento {
 	@Column(unique = true)
 	private String descricao;
 	
+	public AreaConhecimento() {
+		
+	}
+	
 	@Override
 	public String toString() {
 		return "AreaConhecimento: " + descricao;

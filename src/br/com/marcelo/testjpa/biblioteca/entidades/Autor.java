@@ -6,10 +6,13 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 import br.com.marcelo.testjpa.biblioteca.util.FormatarDatas;
 
@@ -20,6 +23,7 @@ public class Autor {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	private String nome;
+	@Temporal(TemporalType.DATE)
 	private Calendar dataNascimento;
 
 	public Autor() {
@@ -53,8 +57,8 @@ public class Autor {
 		this.dataNascimento = data;
 	}
 
-	public SimpleDateFormat getDataNascimento() {
-		return this.getDataNascimento();
+	public Calendar getDataNascimento() {
+		return this.dataNascimento;
 	}
 
 }

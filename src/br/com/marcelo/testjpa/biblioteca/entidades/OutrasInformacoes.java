@@ -15,6 +15,17 @@ public class OutrasInformacoes {
 	private String nrExemplar;
 	private String edicao;
 
+	public OutrasInformacoes() {
+		
+	}
+	
+	public OutrasInformacoes(String dataLancamento, String nrExemplar, String edicao) {
+		super();
+		this.dataLancamento = dataLancamento;
+		this.nrExemplar = nrExemplar;
+		this.edicao = edicao;
+	}
+
 	public Integer getId() {
 		return id;
 	}
